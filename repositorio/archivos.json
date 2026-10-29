@@ -1,0 +1,77 @@
+[
+  {
+    "titulo": "Mi video",
+    "descripcion": "En este trabajo se realizó una dinámica de realizar un video en el cual habláramos un poco de la universidad, lema, himno, símbolos...etc. y relacionarlos con mi vida personal, ¿Cuándo nací?, ¿Dónde nací?, mi himno, mi símbolo y cosas que me representan.",
+    "url": "https://drive.google.com/file/d/1MUsyxChq8_UCVLwJJnyvvFxcRN9mog_1/view?usp=drive_link"
+  },
+  {
+    "titulo": "Recorrido por la u",
+    "descripcion": "En esta actividad la dinámica era que cada estudiante debía hablar un poco sobre alguno de los bloques de la universidad, ¿Qué contiene?, ¿Qué ofrece?...etc. Luego de esto debíamos hacer la edición de este video y agregarle el logo personal y nombre de cada integrante que participó.",
+    "url": "https://drive.google.com/file/d/1gf0TSjpqC4DoUYrJeVzx2juGuTMEd2EK/view?usp=drive_link"
+  },
+  {
+    "titulo": "Juego descubriendo la página de la universidad",
+    "descripcion": "La profesora nos dividió en grupos y nos puso una serie de retos dentro de la página principal de la universidad, el grupo debía encontrar este reto y así ir ganando y acumulando puntos. no adjunto imagen ya que no tengo la evidencia",
+    "archivo": "imagenes/pagina.jpg"
+  },
+  {
+    "titulo": "Reto sobre word",
+    "descripcion": "En esta ocasión la profesora utilizo una plataforma didáctica, nos dividió en grupos y juntos debíamos escoger una serie de retos sobre Word para ganar puntos e ir acumulando estos logros.",
+    "archivo": "imagenes/word.jpg"
+  },
+  {
+    "titulo": "Construcción del himno de la universidad",
+    "descripcion": "En esta ocasión la dinámica consistía en que la profesora nos entrego de forma desglosada en papeles el himno de la universidad, nos dividió en grupos y juntos debíamos intentar construir el himno de manera lógica sin haber escuchado el himno, luego de esto la profesora ponía el himno y debíamos ver si nuestra construcción del libro era adecuado o incoherente al original.",
+    "archivo": "imagenes/himno.jpg"
+  },
+  {
+    "titulo": "Invento de un objeto",
+    "descripcion": "La dinámica de esta clase fue que debíamos crear un producto el cual no existiera, debíamos exponer el ¿Para qué? del producto, los costos e intentar venderlo en poco tiempo.",
+    "archivo": "imagenes/invento.jpg"
+  },
+  {
+    "titulo": "Preguntas sobre las normas APA",
+    "descripcion": "En esta ocasión la profesora utilizó una plataforma didáctica para poner a prueba nuestros conocimientos sobre las normas APA, constaba de 50 preguntas.",
+    "archivo": "imagenes/kahoot.jpg"
+  },
+  {
+    "titulo": "Taller de normas APA",
+    "descripcion": "La profesora nos dio un módulo sobre las normas APA y así conocer mas en que consistía este tema. Para profundizar el tema la profesora puso un taller en el cual debíamos responder una serie de preguntas las cuales en una próxima clase preguntaría al respecto.",
+    "archivo": "imagenes/apa.jpg"
+  },
+  {
+    "titulo": "Caracterización de bienestar universitario",
+    "descripcion": "En esta ocasión una chica de bienestar ingresó al salón para darnos una información la cual consistía en que la universidad lleva un seguimiento sobre cada estudiante para conocerlos un poco mas y así ellos ver que necesidades podría tener este estudiante y que factores podrían influir en su instancia académica dentro de la institución.",
+    "archivo": "imagenes/caracterizacion.jpg"
+  },
+  {
+    "titulo": "Taller de tema tecnológico",
+    "descripcion": "En esa ocasión todo el grupo junto a la profesora nos pusimos de acuerdo para inscribirnos en una charla sobre algún tema de tecnología, esto para cubrir una nota que equivale al 10%.",
+    "archivo": "imagenes/taller.jpg"
+  },
+  {
+    "titulo": "Adivina el refrán",
+    "descripcion": "Esta actividad consistía en que la profesora puso una imagen el cual tiene unos emojis y el reto era intentar descifrar cuál era el refrán que decía.",
+    "archivo": "imagenes/refran.jpg"
+  },
+  {
+    "titulo": "Actividad sobre comunicación",
+    "descripcion": "En esa actividad la profesora escogió a ciertos estudiantes los cuales tenia que describir con palabras unos dibujos, los estudiantes debíamos de seguir las indicaciones y tratar de hacer el dibujo lo mas similar posible. La actividad era para hablar y poner en práctica la comunicación clara.",
+    "archivo": "imagenes/comunicacion.jpg"
+  },
+  {
+    "titulo": "Actividad creación de edificio de papel",
+    "descripcion": "En esta actividad la profesora nos dividió en grupos, nos proporcionó unos materiales como lo fueron hojas de papel, lazo y tijeras. La dinámica consistía en que debíamos hacer una torre de papel que fuera alto y resistente para pasar una prueba, la prueba consistía en que la profesora pondría encima de la torre un tarro de agua y debía aguantar 10 segundos.",
+    "archivo": "imagenes/estructura.jpg"
+  },
+  {
+    "titulo": "Dinámica sobre todo lo que ofrece bienestar universitario",
+    "descripcion": "En esta actividad la profesora nos dividió en grupos, nos repartió unos temas relacionados con lo que ofrece bienestar universitario y tuvimos que hacer una pequeña exposición agregándole un canto. Adjunto video de mi persona bailando mientras otro compañero hacía su exposición.",
+    "archivo": "videos/bienestar.mp4"
+  },
+  {
+    "titulo": "Orgullosamente TdeA",
+    "descripcion": "Es una actividad que proporciona la universidad a los estudiantes del primer semestre los cuales da una introducción sobre la universidad y tiene una serie de dinámicas y preguntas para el final sacar el certificado de este curso.",
+    "archivo": "imagenes/orgullosamente.jpg"
+  }
+]

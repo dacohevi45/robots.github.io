@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorios · Robots Colaborativos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-logo">🤖 Robots Colaborativos</a>
+      <ul>
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#que-son">¿Qué son?</a></li>
+        <li><a href="index.html#aplicaciones">Aplicaciones</a></li>
+        <li><a href="repositorios.html" class="activo">Repositorios</a></li>
+        <li><a href="index.html#australia">Australia</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="site-hero hero-corto">
+    <h1>📁 Repositorios</h1>
+    <p>Sube imágenes o videos de tus proyectos de robots colaborativos y descríbelos.</p>
+  </header>
+
+  <main class="repos-layout">
+
+    <!-- RECURSO FIJO: GENIALLY -->
+    <section class="recurso-fijo">
+      <h2>🎮 Escape Room Competencias ABET</h2>
+      <p>Recurso interactivo creado en Genially.</p>
+      <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Escape Room Competencias ABET" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6aac0faf40eba103cdeaeb5f" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+    </section>
+
+    <!-- FORMULARIO DE SUBIDA -->
+    <form id="formSubida" class="form-subida" novalidate>
+      <h2>Subir un nuevo archivo</h2>
+
+      <div class="campo">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" maxlength="120" placeholder="Ej: Brazo colaborativo en la línea de ensamblaje" required>
+      </div>
+
+      <div class="campo">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" placeholder="Cuenta qué muestra este archivo, cómo funciona, qué robot se usó..." required></textarea>
+      </div>
+
+      <div class="campo">
+        <label>Archivo (imagen o video)</label>
+        <label class="zona-archivo" id="zonaArchivo" for="archivo">
+          <div class="zona-icono">⬆️</div>
+          <strong>Haz clic o arrastra un archivo aquí</strong>
+          <small>Imágenes (JPG, PNG, GIF, WebP…) o videos (MP4, WebM, MOV…). Se admiten videos pesados.</small>
+          <input type="file" id="archivo" accept="image/*,video/*">
+        </label>
+        <div class="vista-previa" id="vistaPrevia"></div>
+        <div class="nombre-seleccionado" id="nombreSeleccionado"></div>
+      </div>
+
+      <div class="barra-progreso" id="barraProgreso"><span></span></div>
+      <button type="submit" class="boton" id="btnSubir">Subir al repositorio</button>
+      <div class="mensaje-form" id="mensajeForm" role="status"></div>
+    </form>
+
+    <!-- ARCHIVOS PUBLICADOS (carpeta repositorio/ del proyecto, visibles para todos) -->
+    <div class="lista-cabecera">
+      <h2>📂 Archivos publicados</h2>
+      <span id="contadorPublicados">0 archivos</span>
+    </div>
+
+    <div id="listaPublicados" class="lista-repos"></div>
+
+    <!-- BORRADORES (guardados solo en este navegador) -->
+    <div class="aviso-local" style="margin-top:50px;">
+      ℹ️ Lo que subes con el formulario se guarda como <strong>borrador en este navegador</strong> y solo lo ves tú.
+      Para publicarlo para todos, usa el botón <strong>📤 Publicar</strong> de cada archivo: te descarga el archivo y te da
+      la línea que debes pegar en <code>repositorio/archivos.json</code>.
+    </div>
+
+    <div class="lista-cabecera">
+      <h2>📝 Borradores en este navegador</h2>
+      <span id="contador">0 archivos</span>
+    </div>
+
+    <div id="listaRepos" class="lista-repos"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 · Sitio educativo realizado por David Correa Herrera</p>
+    <p>Tecnológico de Antioquia</p>
+  </footer>
+
+  <script src="repositorios.js"></script>
+</body>
+</html>

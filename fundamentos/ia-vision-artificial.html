@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia artificial y visión artificial · Fundamentos tecnológicos · Robots Colaborativos</title>
+  <meta name="description" content="La visión artificial y el aprendizaje automático permiten que un cobot reconozca piezas, ajuste sus movimientos y se adapte a entornos poco estructurados. Su uso es cada vez más frecuente, aunque exige validación cuidadosa.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Fundamentos tecnológicos</a><span> › </span><span>Inteligencia artificial y visión artificial</span></div>
+    <h1>⚙️ Inteligencia artificial y visión artificial</h1>
+    <p>La visión artificial y el aprendizaje automático permiten que un cobot reconozca piezas, ajuste sus movimientos y se adapte a entornos poco estructurados. Su uso es cada vez más frecuente, aunque exige validación cuidadosa.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>⚙️ Fundamentos tecnológicos</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="que-es-un-cobot.html">¿Qué es un robot colaborativo?</a></li><li><a href="componentes-mecanicos.html">Componentes mecánicos: brazo, articulaciones y pinzas</a></li><li><a href="sensores-percepcion.html">Sensores y percepción del entorno</a></li><li><a href="control-programacion.html">Sistemas de control y programación</a></li><li><a href="seguridad-normativas.html">Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></li><li><a href="ia-vision-artificial.html" class="activo">Inteligencia artificial y visión artificial</a></li><li><a href="comunicacion-redes.html">Comunicación y redes industriales</a></li></ul></aside>
+    <article class="articulo">
+    <h2>Para qué sirve la visión en un cobot</h2>
+<p>Un robot programado solo con posiciones fijas necesita que las piezas lleguen siempre en el mismo lugar. La visión artificial elimina esa restricción: una cámara fotografía la escena, un algoritmo identifica el objeto y el robot corrige su movimiento según dónde esté realmente.</p>
+<p>Se usa en inspección de calidad, lectura de códigos, guiado del robot hacia la pieza (visual servoing o localización previa al agarre) y clasificación de productos. Las cámaras pueden montarse fijas sobre el área de trabajo o en la muñeca del robot, y cada opción tiene ventajas en alcance y en precisión.</p>
+<h2>Visión 3D y vaciado de cajas</h2>
+<p>Los sensores 3D generan una nube de puntos con la forma del entorno, lo que permite localizar piezas amontonadas al azar. Es el problema clásico del bin picking, donde el robot debe elegir una pieza, planificar un agarre y evitar colisiones con las paredes del contenedor.</p>
+<p>Algunos fabricantes de visión 3D combinan sus escáneres con redes neuronales convolucionales entrenadas con grandes conjuntos de datos para reconocer objetos mezclados, como cajas, bolsas o productos orgánicos. Los resultados dependen de la iluminación y del material de la pieza, ya que las superficies brillantes u oscuras complican la captura.</p>
+<h2>Aprendizaje automático y planificación</h2>
+<p>La inteligencia artificial en robótica abarca desde la detección de objetos mediante aprendizaje profundo hasta el aprendizaje por demostración, donde el robot imita una tarea mostrada por una persona. También se investigan modelos que interpretan instrucciones en lenguaje natural y las traducen a acciones.</p>
+<p>Estas técnicas aportan flexibilidad, pero introducen incertidumbre: un modelo de aprendizaje puede fallar ante situaciones que no vio en su entrenamiento. Por eso, en la práctica, las funciones de seguridad se mantienen en sistemas deterministas y certificados, y la IA se reserva para tareas de percepción y decisión de la producción.</p>
+<h2>Límites y buenas prácticas</h2>
+<p>Una buena implementación define las condiciones de iluminación, calibra la cámara respecto al robot y valida el sistema con muchas piezas reales antes de ponerlo en producción. Conviene también prever qué hará el robot cuando la visión no encuentra nada, por ejemplo pedir ayuda a un operario.</p>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>La visión permite que el robot trabaje con piezas cuya posición no es fija.</li><li>Los sensores 3D y las redes neuronales ayudan en el vaciado de cajas (bin picking).</li><li>La IA se usa sobre todo en percepción y decisión, no en las funciones de seguridad.</li><li>Iluminación, calibración y validación son claves para que funcione en producción.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://www.automate.org/vision/industry-insights/3d-vision-technology-advances-to-keep-pace-with-bin-picking-challenges" target="_blank" rel="noopener noreferrer">3D Vision Technology Advances to Keep Pace With Bin Picking Challenges (A3)</a></li><li><a href="https://www.automationworld.com/PEC-2020/article/21202267/combining-robots-and-vision" target="_blank" rel="noopener noreferrer">Combining robots and vision (Automation World)</a></li><li><a href="https://www.photonics.com/Articles/AI_Brings_New_Capabilities_to_Bin_Picking/a69000" target="_blank" rel="noopener noreferrer">AI Brings New Capabilities to Bin Picking (Photonics.com)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="seguridad-normativas.html"><small>← Anterior</small>Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a><a class="sig" href="comunicacion-redes.html"><small>Siguiente →</small>Comunicación y redes industriales</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensores y percepción del entorno · Fundamentos tecnológicos · Robots Colaborativos</title>
+  <meta name="description" content="Los sensores permiten al cobot conocer su propia posición, sentir contactos y detectar personas u objetos a su alrededor. Combinan sensores internos en las articulaciones con dispositivos externos como escáneres láser y cámaras.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Fundamentos tecnológicos</a><span> › </span><span>Sensores y percepción del entorno</span></div>
+    <h1>⚙️ Sensores y percepción del entorno</h1>
+    <p>Los sensores permiten al cobot conocer su propia posición, sentir contactos y detectar personas u objetos a su alrededor. Combinan sensores internos en las articulaciones con dispositivos externos como escáneres láser y cámaras.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>⚙️ Fundamentos tecnológicos</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="que-es-un-cobot.html">¿Qué es un robot colaborativo?</a></li><li><a href="componentes-mecanicos.html">Componentes mecánicos: brazo, articulaciones y pinzas</a></li><li><a href="sensores-percepcion.html" class="activo">Sensores y percepción del entorno</a></li><li><a href="control-programacion.html">Sistemas de control y programación</a></li><li><a href="seguridad-normativas.html">Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></li><li><a href="ia-vision-artificial.html">Inteligencia artificial y visión artificial</a></li><li><a href="comunicacion-redes.html">Comunicación y redes industriales</a></li></ul></aside>
+    <article class="articulo">
+    <h2>Sensores propioceptivos: saber dónde está el brazo</h2>
+<p>Los sensores propioceptivos miden el estado interno del robot. El más importante es el encoder, que registra el ángulo de cada articulación y permite calcular la posición de la herramienta. Los modelos con mayor exigencia de seguridad suelen duplicar esta medición para detectar fallos.</p>
+<p>También se miden la corriente de los motores y, en muchos casos, el par en cada articulación. Estas magnitudes sirven para estimar la fuerza que el robot ejerce o recibe, base de la capacidad de detectar choques.</p>
+<h2>Sensores de fuerza y de contacto</h2>
+<p>Algunos cobots detectan cuando se les aplica una fuerza externa y se detienen de forma segura, una función central de la colaboración. Esto puede lograrse con sensores de par en las articulaciones o con un sensor de fuerza y par en la muñeca, útil además para tareas de ensamblaje que requieren sensibilidad.</p>
+<p>Otra línea de desarrollo son las pieles blandas o sensores capacitivos que reconocen el contacto, o incluso la proximidad, antes del impacto y hacen que el robot se detenga. Estas soluciones se emplean sobre todo en investigación y en algunos productos específicos.</p>
+<h2>Sensores externos: escáneres y cámaras</h2>
+<p>Cuando se necesita saber dónde está una persona, se recurre a escáneres láser de seguridad, que vigilan una zona y permiten que el robot reduzca su velocidad al acercarse alguien y se detenga si se invade una zona crítica. Las cortinas de luz y las alfombras sensibles cumplen funciones similares en otros montajes.</p>
+<p>Las cámaras 2D y 3D aportan información sobre las piezas: su posición, orientación y tipo. En aplicaciones como el vaciado de cajas, los sensores 3D de luz estructurada generan una nube de puntos de la escena, aunque los materiales brillantes o muy oscuros pueden degradar su calidad.</p>
+<ul class="lista"><li>Encoders: posición angular de cada eje.</li><li>Sensores de par y corriente: fuerza y detección de choques.</li><li>Sensor de fuerza y par en la muñeca: tareas de contacto y guiado manual.</li><li>Escáneres láser de seguridad: detección de personas en la zona.</li><li>Cámaras 2D y 3D: localización de piezas.</li></ul>
+<h2>Percepción y fusión de datos</h2>
+<p>Ningún sensor resuelve todos los casos, por lo que las aplicaciones reales combinan varios. Por ejemplo, una cámara localiza una pieza, el sensor de fuerza controla el contacto al insertarla y el escáner de seguridad vigila a las personas cercanas.</p>
+<p>Elegir los sensores depende de la tarea y del riesgo: los que cumplen funciones de seguridad deben tener certificación y diagnóstico, mientras que los de percepción para la producción pueden ser más flexibles.</p>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>Los encoders y los sensores de par o corriente informan del estado interno del brazo.</li><li>La detección de fuerzas externas permite al cobot detenerse tras un contacto.</li><li>Escáneres láser y cámaras vigilan el entorno y localizan personas o piezas.</li><li>Las aplicaciones reales combinan varios sensores según la tarea y el riesgo.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://www.controldesign.com/sensing/vision-systems/article/11323194/what-makes-collaborative-robots-safe-for-human-interaction" target="_blank" rel="noopener noreferrer">What makes collaborative robots safe for human interaction? (Control Design)</a></li><li><a href="https://www.automate.org/vision/industry-insights/3d-vision-technology-advances-to-keep-pace-with-bin-picking-challenges" target="_blank" rel="noopener noreferrer">3D Vision Technology Advances to Keep Pace With Bin Picking Challenges (A3)</a></li><li><a href="https://www.roboticscenter.ai/guides/robot-end-effectors/" target="_blank" rel="noopener noreferrer">Types of Robot End Effectors (Robotics Center)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="componentes-mecanicos.html"><small>← Anterior</small>Componentes mecánicos: brazo, articulaciones y pinzas</a><a class="sig" href="control-programacion.html"><small>Siguiente →</small>Sistemas de control y programación</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+</body>
+</html>

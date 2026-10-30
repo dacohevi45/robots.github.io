@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes mecánicos: brazo, articulaciones y pinzas · Fundamentos tecnológicos · Robots Colaborativos</title>
+  <meta name="description" content="El cuerpo de un cobot se compone de eslabones ligeros, articulaciones motorizadas con reductores y sensores, y un efector final como una pinza. Cada elemento influye en la carga, el alcance y la seguridad.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Fundamentos tecnológicos</a><span> › </span><span>Componentes mecánicos: brazo, articulaciones y pinzas</span></div>
+    <h1>⚙️ Componentes mecánicos: brazo, articulaciones y pinzas</h1>
+    <p>El cuerpo de un cobot se compone de eslabones ligeros, articulaciones motorizadas con reductores y sensores, y un efector final como una pinza. Cada elemento influye en la carga, el alcance y la seguridad.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>⚙️ Fundamentos tecnológicos</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="que-es-un-cobot.html">¿Qué es un robot colaborativo?</a></li><li><a href="componentes-mecanicos.html" class="activo">Componentes mecánicos: brazo, articulaciones y pinzas</a></li><li><a href="sensores-percepcion.html">Sensores y percepción del entorno</a></li><li><a href="control-programacion.html">Sistemas de control y programación</a></li><li><a href="seguridad-normativas.html">Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></li><li><a href="ia-vision-artificial.html">Inteligencia artificial y visión artificial</a></li><li><a href="comunicacion-redes.html">Comunicación y redes industriales</a></li></ul></aside>
+    <article class="articulo">
+    <h2>El brazo: eslabones y ejes</h2>
+<p>La mayoría de los cobots tienen forma de brazo articulado de seis ejes, aunque existen modelos de siete ejes y versiones tipo SCARA. Cada eje es un grado de libertad que permite orientar y situar la herramienta en el espacio; con seis se puede alcanzar cualquier posición y orientación dentro del volumen de trabajo.</p>
+<p>Los eslabones, es decir, los tramos rígidos entre articulaciones, se fabrican con aleaciones ligeras o plásticos reforzados. Menos masa en movimiento significa menos energía en un posible impacto, lo que ayuda a cumplir los límites de fuerza exigidos para trabajar cerca de personas. A cambio, la carga útil y el alcance de un cobot son menores que los de un robot industrial grande.</p>
+<h2>Articulaciones: motor, reductor y sensor</h2>
+<p>Cada articulación es un módulo compacto que integra un motor eléctrico, un reductor de velocidad, frenos, un encoder que mide el ángulo y la electrónica de control. El reductor multiplica el par del motor y reduce su velocidad; en robótica colaborativa son habituales los reductores de tipo onda de deformación (conocidos como harmonic drive) por su tamaño reducido y su baja holgura.</p>
+<p>Muchos cobots añaden además medición de par en las articulaciones, o estiman la fuerza a partir de la corriente de los motores. Con esa información el robot puede notar que ha chocado con algo y detenerse. Los detalles de diseño cambian mucho entre fabricantes, por lo que conviene consultar la ficha técnica de cada modelo.</p>
+<h2>Efectores finales: pinzas y herramientas</h2>
+<p>El efector final es la herramienta montada en la muñeca del robot. La pinza de dos dedos paralelos es el tipo más común y funciona bien con piezas de geometría predecible. Las pinzas adaptativas o blandas se ajustan a formas irregulares y dañan menos los objetos, a costa de menor fuerza o precisión.</p>
+<p>Las ventosas de vacío sirven para superficies lisas y no porosas, como cajas de cartón o láminas, y las pinzas magnéticas se limitan a piezas ferrosas. También se montan atornilladores, boquillas de pegamento, antorchas de soldadura o lijadoras.</p>
+<h2>Criterios de selección</h2>
+<p>La carga útil real que puede manipular el robot es la carga nominal menos el peso de la pinza, y disminuye cuando el objeto se sujeta lejos de la base. Por eso no basta con mirar solo el número de kilogramos del catálogo.</p>
+<p>Como ejemplo de especificaciones de una pinza comercial, la Robotiq 2F-85 tiene una apertura de 85 mm y una fuerza de agarre ajustable de 20 a 235 N. Además, la herramienta forma parte de la evaluación de riesgos: una pinza con bordes cortantes o mucha fuerza puede hacer que una aplicación deje de ser segura aunque el brazo lo sea.</p>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>El brazo típico tiene seis ejes (grados de libertad) y eslabones ligeros.</li><li>Cada articulación integra motor, reductor, freno, encoder y electrónica.</li><li>Las pinzas pueden ser de dedos paralelos, adaptativas, de vacío, magnéticas o blandas.</li><li>La carga útil real descuenta el peso de la herramienta y baja con el alcance.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://www.roboticscenter.ai/guides/robot-end-effectors/" target="_blank" rel="noopener noreferrer">Types of Robot End Effectors (Robotics Center)</a></li><li><a href="https://www.futek.com/applications/Torque-Sensors-for-Robot-Joint-Control" target="_blank" rel="noopener noreferrer">Torque Sensors for Robot Joint Control (FUTEK)</a></li><li><a href="https://www.impomag.com/products/press-release/13247607/robotiq-improves-grippers-for-collaborative-robots" target="_blank" rel="noopener noreferrer">Robotiq Improves Grippers for Collaborative Robots (Industrial Maintenance &amp; Plant Operation)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="que-es-un-cobot.html"><small>← Anterior</small>¿Qué es un robot colaborativo?</a><a class="sig" href="sensores-percepcion.html"><small>Siguiente →</small>Sensores y percepción del entorno</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+</body>
+</html>

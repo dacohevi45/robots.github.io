@@ -9,23 +9,12 @@
 </head>
 <body>
 
-  <!-- NAVEGACIÓN DEL SITIO -->
-  <nav class="site-nav">
-    <div class="site-nav-inner">
-      <a href="index.html" class="site-logo"> Robots Colaborativos</a>
-      <ul>
-        <li><a href="#inicio" class="activo">Inicio</a></li>
-        <li><a href="#que-son">¿Qué son?</a></li>
-        <li><a href="#aplicaciones">Aplicaciones</a></li>
-        <li><a href="repositorios.html">Repositorios</a></li>
-        <li><a href="#australia">Australia</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- NAVEGACIÓN DEL SITIO (la dibuja menu.js) -->
+  <div id="site-nav"></div>
 
   <!-- HERO -->
   <header class="site-hero" id="inicio">
-    <h1>Robots colaborativos</h1>
+    <h1>🤖 Robots colaborativos</h1>
     <p>Máquinas diseñadas para trabajar junto a las personas, de forma segura, flexible e inteligente.</p>
     <a href="#que-son" class="boton">Conocer más</a>
     <a href="repositorios.html" class="boton boton-secundario">Ir a Repositorios</a>
@@ -136,11 +125,36 @@
     </div>
   </section>
 
+  <!-- ESTRUCTURA DEL SITIO -->
+  <section id="estructura" class="bloque">
+    <h2>Estructura del sitio</h2>
+    <p class="bloque-intro">Secciones que componen la investigación y cuántas páginas tiene cada una. Haz clic en una sección para entrar.</p>
+    <div class="tabla-contenedor">
+      <table class="tabla-estructura">
+        <thead>
+          <tr>
+            <th>Sección</th>
+            <th>Páginas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="fundamentos/index.html">Fundamentos tecnológicos</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="evolucion/index.html">Evolución tecnológica</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="noticias/index.html">Noticias y actualidad</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="aplicaciones/index.html">Aplicaciones tecnológicas</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="impacto/index.html">Impacto social, ambiental y ético</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="proyecto/index.html">Proyecto práctico e interactividad</a></td><td>1 principal + 7 subpáginas</td></tr>
+          <tr><td><a href="repositorios.html">Repositorio digital</a></td><td>Una sola página, sin subpáginas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <!-- ACCESO A REPOSITORIOS -->
   <section class="bloque">
     <div class="cta-repos">
       <h2>📁 Repositorios</h2>
-      <p>Sube imágenes y videos de las actividades vistas en clase, con su título y descripción.</p>
+      <p>Sube imágenes y videos de tus proyectos de robots colaborativos, con su título y descripción.</p>
       <a href="repositorios.html" class="boton">Abrir repositorios</a>
     </div>
   </section>
@@ -271,12 +285,10 @@
     </p>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2026 · Sitio educativo realizado por David Correa Herrera</p>
-    <p>Tecnológico de Antioquia</p>
-  </footer>
+  <!-- FOOTER (lo dibuja menu.js) -->
+  <footer id="site-footer" class="site-footer"></footer>
 
+  <script src="menu.js"></script>
   <script src="australia.js"></script>
 </body>
 </html>

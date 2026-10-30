@@ -3,27 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repositorios</title>
+  <title>Repositorios · Robots Colaborativos</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="site-nav">
-    <div class="site-nav-inner">
-      <a href="index.html" class="site-logo">🤖 Robots Colaborativos</a>
-      <ul>
-        <li><a href="index.html#inicio">Inicio</a></li>
-        <li><a href="index.html#que-son">¿Qué son?</a></li>
-        <li><a href="index.html#aplicaciones">Aplicaciones</a></li>
-        <li><a href="repositorios.html" class="activo">Repositorios</a></li>
-        <li><a href="index.html#australia">Australia</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="site-nav"></div>
 
   <header class="site-hero hero-corto">
     <h1>📁 Repositorios</h1>
-    <p>Sube imágenes y videos de las actividades vistas en clase, con su título y descripción.</p>
+    <p>Sube imágenes o videos de tus proyectos de robots colaborativos y descríbelos.</p>
   </header>
 
   <main class="repos-layout">
@@ -33,6 +22,21 @@
       <h2>🎮 Escape Room Competencias ABET</h2>
       <p>Recurso interactivo creado en Genially.</p>
       <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Escape Room Competencias ABET" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6aac0faf40eba103cdeaeb5f" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+    </section>
+
+    <!-- RECURSO FIJO: PDF -->
+    <section class="recurso-fijo">
+      <h2>📄 Taller de normas APA</h2>
+      <p>Documento PDF (4 páginas).</p>
+      <div class="visor-pdf">
+        <object data="repositorio/documentos/Taller_normas_APA.pdf#view=FitH" type="application/pdf" aria-label="Taller de normas APA (PDF)">
+          <p>Tu navegador no puede mostrar el PDF aquí. Usa los botones de abajo para abrirlo o descargarlo.</p>
+        </object>
+      </div>
+      <p class="pdf-acciones">
+        <a class="boton" href="repositorio/documentos/Taller_normas_APA.pdf" target="_blank" rel="noopener">Abrir en una pestaña nueva</a>
+        <a class="boton boton-claro" href="repositorio/documentos/Taller_normas_APA.pdf" download>Descargar PDF</a>
+      </p>
     </section>
 
     <!-- FORMULARIO DE SUBIDA -->
@@ -89,11 +93,9 @@
     <div id="listaRepos" class="lista-repos"></div>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 · Sitio educativo realizado por David Correa Herrera</p>
-    <p>Tecnológico de Antioquia</p>
-  </footer>
+  <footer id="site-footer" class="site-footer"></footer>
 
+  <script src="menu.js"></script>
   <script src="repositorios.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas de control y programación · Fundamentos tecnológicos · Robots Colaborativos</title>
+  <meta name="description" content="El controlador calcula trayectorias, vigila la seguridad y ejecuta el programa del usuario. Los cobots se distinguen por métodos de programación accesibles, como el guiado manual y las interfaces gráficas.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Fundamentos tecnológicos</a><span> › </span><span>Sistemas de control y programación</span></div>
+    <h1>⚙️ Sistemas de control y programación</h1>
+    <p>El controlador calcula trayectorias, vigila la seguridad y ejecuta el programa del usuario. Los cobots se distinguen por métodos de programación accesibles, como el guiado manual y las interfaces gráficas.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>⚙️ Fundamentos tecnológicos</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="que-es-un-cobot.html">¿Qué es un robot colaborativo?</a></li><li><a href="componentes-mecanicos.html">Componentes mecánicos: brazo, articulaciones y pinzas</a></li><li><a href="sensores-percepcion.html">Sensores y percepción del entorno</a></li><li><a href="control-programacion.html" class="activo">Sistemas de control y programación</a></li><li><a href="seguridad-normativas.html">Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></li><li><a href="ia-vision-artificial.html">Inteligencia artificial y visión artificial</a></li><li><a href="comunicacion-redes.html">Comunicación y redes industriales</a></li></ul></aside>
+    <article class="articulo">
+    <h2>El controlador y el lazo de control</h2>
+<p>El controlador es el computador que gobierna el robot. A partir de las posiciones deseadas calcula, mediante cinemática inversa, qué ángulo debe tener cada articulación, genera una trayectoria suave y envía órdenes a los motores muchas veces por segundo. Si los encoders indican que el brazo se desvía, el lazo de control corrige la diferencia.</p>
+<p>En paralelo funciona un sistema de seguridad que vigila límites de velocidad, fuerza y posición, y puede detener el robot si algo falla. En los cobots de Universal Robots, por ejemplo, la interfaz de tiempo real entrega datos del robot a una frecuencia de hasta 500 Hz, lo que da una idea de la rapidez de estos ciclos.</p>
+<h2>Programación sin escribir código</h2>
+<p>Una de las razones del éxito de los cobots es que se programan de forma sencilla. En el guiado manual, el operario mueve el brazo con la mano hasta una posición y la guarda como punto de paso; después se encadenan esos puntos en una secuencia. Esta técnica se apoya en sensores de fuerza o de par que permiten sentir la intención de la persona.</p>
+<p>Las tabletas de programación (teach pendant) ofrecen entornos gráficos de bloques o árboles de programa donde se añaden acciones como mover, esperar, abrir la pinza o repetir. Así, una persona sin formación en programación puede poner en marcha una tarea sencilla en poco tiempo.</p>
+<h2>Programación avanzada y simulación</h2>
+<p>Para tareas complejas se recurre a lenguajes del fabricante, como URScript en los robots de Universal Robots, o a marcos de software abiertos como ROS y ROS 2, que ofrecen controladores, planificación de movimientos y herramientas de visualización. Existen controladores de ROS 2 para varios cobots comerciales.</p>
+<p>También se programa fuera de línea con simuladores, que permiten probar trayectorias y detectar colisiones antes de usar el robot real. Una tendencia en investigación es la programación orientada a tareas, que oculta los detalles de bajo nivel para que el usuario describa qué quiere lograr y no cómo mover cada eje.</p>
+<h2>Integración con el resto de la planta</h2>
+<p>Un cobot rara vez trabaja aislado: recibe señales de un PLC, de cámaras o de otras máquinas. Para ello ofrece entradas y salidas digitales, y también interfaces de red que se explican en la subpágina de comunicación. El programa suele combinar movimientos con condiciones, por ejemplo esperar a que llegue una pieza antes de iniciar el ciclo.</p>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>El controlador resuelve la cinemática, genera trayectorias y cierra el lazo con los encoders.</li><li>El guiado manual permite enseñar posiciones moviendo el brazo con la mano.</li><li>Las interfaces gráficas reducen la necesidad de saber programar.</li><li>Para casos avanzados existen lenguajes del fabricante, ROS 2 y simuladores.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://universal-robots.com/developer/communication-protocol" target="_blank" rel="noopener noreferrer">Communication Protocols (Universal Robots developer site)</a></li><li><a href="https://emeraldinsight.com/insight/content/doi/10.1108/IR-11-2014-0413/full/html" target="_blank" rel="noopener noreferrer">Manual guidance for industrial robot programming (Industrial Robot, Emerald)</a></li><li><a href="https://arxiv.org/pdf/2303.02340" target="_blank" rel="noopener noreferrer">Hiding task-oriented programming complexity: an industrial case study (arXiv)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="sensores-percepcion.html"><small>← Anterior</small>Sensores y percepción del entorno</a><a class="sig" href="seguridad-normativas.html"><small>Siguiente →</small>Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+</body>
+</html>

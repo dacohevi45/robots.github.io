@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicación y redes industriales · Fundamentos tecnológicos · Robots Colaborativos</title>
+  <meta name="description" content="Un cobot se integra a la fábrica mediante señales digitales, protocolos de bus de campo y redes Ethernet industriales. La elección del protocolo depende del PLC, de la velocidad requerida y de la seguridad.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Fundamentos tecnológicos</a><span> › </span><span>Comunicación y redes industriales</span></div>
+    <h1>⚙️ Comunicación y redes industriales</h1>
+    <p>Un cobot se integra a la fábrica mediante señales digitales, protocolos de bus de campo y redes Ethernet industriales. La elección del protocolo depende del PLC, de la velocidad requerida y de la seguridad.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>⚙️ Fundamentos tecnológicos</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="que-es-un-cobot.html">¿Qué es un robot colaborativo?</a></li><li><a href="componentes-mecanicos.html">Componentes mecánicos: brazo, articulaciones y pinzas</a></li><li><a href="sensores-percepcion.html">Sensores y percepción del entorno</a></li><li><a href="control-programacion.html">Sistemas de control y programación</a></li><li><a href="seguridad-normativas.html">Seguridad y normativas (ISO 10218 e ISO/TS 15066)</a></li><li><a href="ia-vision-artificial.html">Inteligencia artificial y visión artificial</a></li><li><a href="comunicacion-redes.html" class="activo">Comunicación y redes industriales</a></li></ul></aside>
+    <article class="articulo">
+    <h2>Por qué importa la comunicación</h2>
+<p>Un cobot casi siempre forma parte de una celda con un PLC, sensores, cintas transportadoras, pinzas y cámaras. Para coordinarse, estos equipos intercambian datos como el inicio de un ciclo, la presencia de una pieza o el estado de una parada de emergencia.</p>
+<p>La forma más simple es mediante entradas y salidas digitales cableadas. Para intercambiar más información se usan redes Ethernet industriales, que transportan tanto datos de control como diagnósticos y, en algunos casos, señales de seguridad certificadas.</p>
+<h2>Protocolos de bus de campo habituales</h2>
+<p>Los fabricantes de cobots suelen ofrecer varios protocolos. Universal Robots, por ejemplo, documenta compatibilidad con Modbus TCP/IP, EtherNet/IP (donde el robot actúa como servidor) y PROFINET, incluida la variante de seguridad PROFIsafe. Existe además SRCI, un protocolo basado en PROFINET que estandariza los comandos del robot dentro del entorno de ingeniería del PLC.</p>
+<p>En general PROFINET es común en plantas centradas en PLC de Siemens, mientras que EtherNet/IP se asocia más al ecosistema de Rockwell. Modbus TCP destaca por su sencillez y su amplia adopción en equipos de distintos fabricantes.</p>
+<ul class="lista"><li>Modbus TCP/IP: sencillo y muy extendido, apto para intercambiar registros.</li><li>EtherNet/IP: habitual en entornos con PLC Rockwell.</li><li>PROFINET y PROFIsafe: habituales en entornos Siemens, con opción de seguridad.</li><li>EtherCAT: orientado a control de movimiento con ciclos muy cortos.</li></ul>
+<h2>Tiempo real y Ethernet determinista</h2>
+<p>Algunas aplicaciones requieren tiempos de respuesta muy cortos y repetibles. EtherCAT trabaja con ciclos del orden de decenas a cientos de microsegundos y utiliza relojes distribuidos para sincronizar los dispositivos. PROFINET en su variante RT opera en el rango de milisegundos, y la variante IRT alcanza ciclos de cientos de microsegundos con switches específicos.</p>
+<p>Además, el estándar TSN (Time-Sensitive Networking) permite que el tráfico crítico y el tráfico de TI compartan la misma red física con ancho de banda garantizado. No sustituye a EtherCAT ni a PROFINET, sino que los complementa, y su adopción en robots colaborativos todavía está en evolución.</p>
+<h2>Interfaces para el programador y para ROS</h2>
+<p>Aparte de los buses de campo, los cobots exponen interfaces TCP/IP para programadores. En Universal Robots existen, entre otras, un servidor de dashboard para control básico, la interfaz RTDE para intercambiar datos con frecuencias configurables de 1 a 500 Hz y un controlador para ROS y ROS 2 que trabaja hasta 500 Hz.</p>
+<p>Con estas interfaces se pueden conectar aplicaciones propias, sistemas de visión o plataformas de monitoreo. También crece la importancia de la ciberseguridad: la revisión de ISO 10218 de 2025 añadió requisitos específicos para proteger los robots industriales frente a accesos no autorizados.</p>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>Los cobots se conectan a PLC y otros equipos por E/S digitales y redes Ethernet industriales.</li><li>Modbus TCP, EtherNet/IP y PROFINET son protocolos habituales de integración.</li><li>EtherCAT y PROFINET IRT cubren aplicaciones con requisitos de tiempo real estricto.</li><li>TSN complementa a los protocolos existentes, y la ciberseguridad es un requisito cada vez más importante.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://universal-robots.com/developer/communication-protocol" target="_blank" rel="noopener noreferrer">Communication Protocols (Universal Robots developer site)</a></li><li><a href="https://promwad.com/news/real-time-ethernet-collaborative-robots-tsn-ethercat-profinet-2026" target="_blank" rel="noopener noreferrer">Real-Time Ethernet for Collaborative Robots: TSN vs EtherCAT vs Profinet (Promwad)</a></li><li><a href="https://www.automate.org/robotics/blogs/updated-iso-10218-faq" target="_blank" rel="noopener noreferrer">Updated ISO 10218: Answers to Frequently Asked Questions (A3)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="ia-vision-artificial.html"><small>← Anterior</small>Inteligencia artificial y visión artificial</a><a class="sig" href="../evolucion/index.html"><small>Siguiente sección →</small>Evolución tecnológica</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de retorno de inversión · Proyecto práctico e interactividad · Robots Colaborativos</title>
+  <meta name="description" content="Calculadora que estima el periodo de recuperación de una inversión en un robot a partir de costos, salario, turnos y mantenimiento.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <header class="site-hero hero-corto hero-pagina">
+    <div class="migas"><a href="../index.html">Inicio</a><span> › </span><a href="index.html">Proyecto práctico e interactividad</a><span> › </span><span>Calculadora de retorno de inversión</span></div>
+    <h1>🧪 Calculadora de retorno de inversión</h1>
+    <p>Calculadora que estima el periodo de recuperación de una inversión en un robot a partir de costos, salario, turnos y mantenimiento.</p>
+  </header>
+  <main class="pagina-contenido">
+    <aside class="lateral" aria-label="En esta sección"><h2>🧪 Proyecto práctico e interactividad</h2><ul><li><a href="index.html">📋 Vista general</a></li><li><a href="quiz.html">Quiz interactivo</a></li><li><a href="linea-de-tiempo.html">Línea de tiempo interactiva</a></li><li><a href="comparador-de-cobots.html">Comparador de robots</a></li><li><a href="calculadora-roi.html" class="activo">Calculadora de retorno de inversión</a></li><li><a href="glosario.html">Glosario interactivo</a></li><li><a href="guia-de-proyecto.html">Guía para un proyecto con robots</a></li><li><a href="conclusiones.html">Conclusiones y evaluación</a></li></ul></aside>
+    <article class="articulo">
+    <h2>Qué es el ROI y el periodo de recuperación</h2>
+<p>El retorno de inversión (ROI) relaciona la ganancia neta con lo invertido y se expresa como porcentaje. El periodo de recuperación, o payback, indica cuánto tiempo tardan los ahorros en igualar la inversión total; se calcula dividiendo la inversión entre el ahorro neto anual.</p>
+<p>Para un robot, el ahorro principal suele ser la mano de obra liberada, aunque también cuentan menos desperdicio, menos rotación de personal y mayor producción si se añaden turnos.</p>
+<h2>Costos que suelen incluirse</h2>
+<p>Además del brazo, hay que sumar la pinza o herramienta, los soportes y fijaciones, la integración y programación, la capacitación y el mantenimiento anual. Los robots colaborativos evitan buena parte del vallado de seguridad de los robots tradicionales, pero eso no elimina la evaluación de riesgos.</p>
+    <div id="widget" class="widget-proyecto" data-tipo="roi"></div>
+    <script type="application/json" id="datos-widget">{"parametros": {"costo_cobot": 35000, "costo_integracion": 15000, "salario_mensual": 1200, "turnos_reemplazados": 1, "mantenimiento_anual": 2000}, "notas": ["Todos los valores son ilustrativos en dólares estadounidenses (USD); cada empresa debe reemplazarlos por cotizaciones y salarios reales de su país.", "Ahorro anual estimado = salario mensual x 12 x turnos reemplazados. El periodo de recuperación simple es (costo del robot + integración) dividido entre (ahorro anual - mantenimiento anual).", "Con los valores de ejemplo el ahorro bruto es 14 400 USD al año; restando 2 000 de mantenimiento quedan 12 400 y el periodo de recuperación ronda los 4 años. Con dos turnos reemplazados bajaría a menos de 2 años.", "El salario debería incluir prestaciones y cargas sociales, no solo el sueldo base. Si no se incluyen, el ahorro se subestima.", "El cálculo simple no considera beneficios como menos errores, mayor calidad, menos lesiones o mayor producción, ni costos como herramientas, sujeción, capacitación o paradas. Úsalo como una primera aproximación."]}</script>
+    <section class="puntos-clave"><h3>💡 Puntos clave</h3><ul><li>Periodo de recuperación = inversión total / ahorro neto anual.</li><li>Incluye integración, herramientas y mantenimiento, no solo el precio del brazo.</li><li>Más turnos reemplazados acortan el retorno.</li><li>Los valores de ejemplo son ilustrativos.</li></ul></section>
+    <section class="fuentes"><h3>Fuentes consultadas</h3><ol><li><a href="https://qviro.com/blog/cobot-roi/" target="_blank" rel="noopener noreferrer">Can Cobots Achieve ROI in Just 195 Days? (Qviro)</a></li><li><a href="https://en.wikipedia.org/wiki/Universal_Robots" target="_blank" rel="noopener noreferrer">Universal Robots (Wikipedia)</a></li></ol><p class="aviso-fuentes">Contenido redactado a partir de las fuentes anteriores. Verifica cifras y fechas en ellas antes de citarlas.</p></section>
+    <nav class="anterior-siguiente" aria-label="Navegación entre páginas"><a class="ant" href="comparador-de-cobots.html"><small>← Anterior</small>Comparador de robots</a><a class="sig" href="glosario.html"><small>Siguiente →</small>Glosario interactivo</a></nav>
+    </article>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <noscript><p style="padding:20px;text-align:center">Activa JavaScript para ver el menú de navegación. <a href="../index.html">Ir al inicio</a></p></noscript>
+  <script src="../menu.js"></script>
+  <script src="../widgets.js"></script>
+</body>
+</html>

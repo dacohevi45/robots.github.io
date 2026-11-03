@@ -1011,3 +1011,8 @@ body {
 .pdf-acciones { margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap; }
 .boton-claro { background: white; color: var(--azul); border: 2px solid var(--azul); box-shadow: none; }
 .boton-claro:hover { background: #eef3fa; }
+
+/* Tabla "Explora..." de la portada: segunda columna con descripción */
+.tabla-ancha { max-width: 1000px; }
+.tabla-ancha .tabla-estructura td:first-child { width: 34%; }
+.tabla-ancha .tabla-estructura td:last-child { color: #3b4a5a; }
